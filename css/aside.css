@@ -1,0 +1,74 @@
+.logo{
+    height: 60px;
+    /* outline: 1px solid #fff; */
+    display: flex;
+    /* border: 1px solid #FFF; */
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+.aside-main{
+    height:calc(100vh - 60px);
+    /* background-color: red; */
+    overflow: scroll;
+}
+.aside-main::-webkit-scrollbar{
+    width: 0;
+}
+.aside-main .menu a{
+    display: flex;
+    font-size: 16px;
+    /* color: #31323a; */
+    margin-bottom: 12px;
+    margin-left: 44px;
+    line-height: 36px;
+    align-items: center;
+}
+.aside-main .menu .iconfont{
+    font-size: 24px;
+    margin-right: 15px;
+}
+.aside-main .menu{
+    vertical-align: bottom;
+}
+a.active,a:hover{
+    color: #fff;
+    font-weight: bolder;
+}
+.split{
+    height: 1px;
+    width: 70px;
+    background-color: #31323a;
+    margin-bottom: 12px;
+    margin-left: 44px;
+}
+.a-footer{
+    color: rgba(255,255,255,0.4);
+    font-size: 12px;
+    padding: 15px ;
+
+}
+.a-footer p{
+    margin: 6px 0;
+}
+.a-footer p img{
+    width: 12px;
+    opacity: 0.4;
+}
+.aside-section{
+    border-bottom: 1px solid #31323a;
+    padding: 15px 0;
+}
+.aside-links{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    margin-top: 8px;
+}
+.aside-links a{
+    margin-right: 12px;
+    margin-top: 8px;
+}
+.aside-links a:nth-child(2n){
+    margin-right: 0;
+}

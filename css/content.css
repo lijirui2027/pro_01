@@ -1,0 +1,123 @@
+.content {
+  padding: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100vh - 60px);
+  overflow-y: scroll;
+}
+/* 设置整个滚动条的样式 */
+.content::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* 设置滚动条中滑块的样式 */
+.content::-webkit-scrollbar-thumb {
+  background: #363741;
+  border-radius: 4px;
+}
+
+.content-item {
+  width: 25%;
+  padding: 0 8px;
+  margin-bottom: 22px;
+}
+.content-cover {
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+  position: relative;
+  display: block;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.content-cover > * {
+  position: absolute;
+}
+
+.content-cover-img,
+.content-cover video {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.content-favor {
+  left: 10px;
+  bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.content-favor .iconfont {
+  margin-right: 5px;
+}
+
+.content-time {
+  right: 10px;
+  bottom: 10px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.content-progress {
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.6);
+  bottom: 0;
+  left: 0;
+  display: none;
+  z-index: 99;
+}
+.content-progress-inner {
+  background: #fe2c55;
+  width: 0%;
+  height: 3px;
+}
+
+.content-title {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 10px 0;
+  line-height: 24px;
+  height: 48px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.content-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.content-info img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.content-date {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+.content-cover:hover video {
+  display: block;
+}
+.content-cover:hover .content-progress {
+  display: block;
+}
+.content-cover video {
+  display: none;
+}

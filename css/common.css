@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    color: rgba(255,255,255,.7);
+}
+.container{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.aside{
+    width: 172px;
+    background-color: #060716;  
+    flex-grow: 0;
+    /* flex: 0 0 172px; */
+}
+.main{
+    background-color: #161722;
+    flex-grow: 1;
+    /* flex:0 0 auto */
+}
